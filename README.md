@@ -70,7 +70,8 @@ curl http://192.168.245.132:30081
 
 Скриншот проверки NodePort (curl или браузер):
 
-![nodeport access](img/3.png)
+![nodeport access](img/3-1.png)
+![nodeport access](img/3-2.png)
 
 ---
 
@@ -88,7 +89,7 @@ curl http://192.168.245.132:30081
 microk8s enable ingress
 ```
 
-Скриншот статуса аддона/подов ingress (по желанию, но полезно):
+Скриншот статуса аддона/подов ingress:
 
 ![ingress enabled](img/4.png)
 
@@ -116,8 +117,8 @@ kubectl get ingress -o wide
 ### 2.3 Проверка доступа через Ingress
 Проверка (curl или браузер):
 ```bash
-curl http://<host>/
-curl http://<host>/api
+curl http://127.0.0.1/
+curl http://127.0.0.1/api
 ```
 
 Скриншот проверки доступа через Ingress (оба запроса):
