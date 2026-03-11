@@ -54,8 +54,8 @@ kubectl run test-pod --image=wbitt/network-multitool --rm -it -- sh
 
 Внутри `test-pod`:
 ```sh
-curl <service-name>:9001
-curl <service-name>:9002
+curl multi-container-svc:9001
+curl multi-container-svc:9002
 ```
 
 Скриншот проверки доступа изнутри кластера (curl на 9001 и 9002):
